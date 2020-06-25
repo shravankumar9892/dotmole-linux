@@ -1,0 +1,81 @@
+{% extends 'layouts/main.html' %}
+{% block title %}Dashboard - {{ title }}{% endblock %}
+{% block content %}
+  <!-- Content Header (Page header) -->
+  <div class="content-header">
+    <div class="container-fluid">
+      <div class="row mb-2">
+        <div class="col-sm-6">
+          <h1 class="m-0 text-dark">Welcome</h1>
+        </div><!-- /.col -->
+        <div class="col-sm-6">
+          <ol class="breadcrumb float-sm-right">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item">Welcome</li>
+          </ol>
+        </div><!-- /.col -->
+      </div><!-- /.row -->
+    </div><!-- /.container-fluid -->
+  </div>
+  <!-- /.content-header -->
+
+  <!-- Main content -->
+  <div class="content">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="card">
+            <div class="card-body">
+              <p class="card-text">
+                Build your next home automation system on top of Dotmole Cloud.
+              </p>
+
+              <a href="https://shravankumarshetty9892.gitbook.io/dotmole/" class="card-link">Read docs</a>
+            <a href="{{ url_for('main.livestream') }}" class="card-link">Start building</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Developers</h5>
+
+              <p class="card-text">
+                Use Dotmole APIs to win hackathons or build your next big idea
+              </p>
+              <a href="https://shravankumarshetty9892.gitbook.io/dotmole/" class="card-link">Read docs</a>
+            <a href="{{ url_for('main.livestream') }}" class="card-link">Start building</a>
+            </div>
+          </div><!-- /.card -->
+        </div>
+        <!-- /.col-md-6 -->
+        <div class="col-lg-6">
+          <div class="card card card-primary card-outline">
+            <div class="card-header">
+              <h5 class="m-0">Smart City Security System</h5>
+            </div>
+            <div class="card-body">
+              <h6 class="card-title">Police working with Dotmole Snitcher</h6>
+
+              <p class="card-text">Dotmole Snitcher informing police about everything happening in the city</p>
+              <a href="#" class="btn btn-primary">Contact Sales</a>
+            </div>
+          </div>
+
+          <div class="card card-primary card-outline">
+            <div class="card-header">
+              <h5 class="m-0">Military Base Security</h5>
+            </div>
+            <div class="card-body">
+              <h6 class="card-title">Military camps clouded with Snitcher</h6>
+
+              <p class="card-text">Dotmole Snitcher - Activity Recognition continous watch on base camps.</p>
+              <a href="#" class="btn btn-primary">Contact Sales</a>
+            </div>
+          </div>
+        </div>
+        <!-- /.col-md-6 -->
+      </div>
+      <!-- /.row -->
+    </div><!-- /.container-fluid -->
+  </div>
+{% endblock %}
